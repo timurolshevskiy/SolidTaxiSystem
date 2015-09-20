@@ -22,8 +22,8 @@ public class MainActivity extends Activity {
 
         initToolbar();
 
-        ImageView imageView = (ImageView) findViewById(R.id.imageView);
-        imageView.setImageDrawable(getResources().getDrawable(R.drawable.ic_magnify_white_48dp));
+        //ImageView imageView = (ImageView) findViewById(R.id.imageView);
+        //imageView.setImageDrawable(getResources().getDrawable(R.drawable.ic_magnify_white_48dp));
     }
     private void initToolbar()
     {
