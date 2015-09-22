@@ -1,6 +1,8 @@
 package com.scholota.taxiclient;
 
+import android.annotation.TargetApi;
 import android.app.Activity;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Button;
@@ -18,13 +20,13 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button button;
 
         initToolbar();
 
         //ImageView imageView = (ImageView) findViewById(R.id.imageView);
         //imageView.setImageDrawable(getResources().getDrawable(R.drawable.ic_magnify_white_48dp));
     }
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     private void initToolbar()
     {
         toolbar=(Toolbar) findViewById(R.id.toolbar);
